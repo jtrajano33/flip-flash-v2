@@ -1,0 +1,833 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+nav{
+	background-color: black;
+}
+
+a.active {
+	color: red;
+	background: radial-gradient(circle, rgba(255, 0, 0, 0.5), maroon, rgba(0, 0, 0, 1));
+	border-radius: 10px;
+}
+
+
+body{
+	background-image: url("../images/bg2.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	max-width: 100vw;
+	max-height: 100px;
+}
+
+h1{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.titleFont{
+	font-size: 60px;
+}
+
+#pad{
+	padding-left: 0;
+	padding-right: 0;
+	height: 100vh;
+	width: 100vw;
+
+}
+
+.pad1{
+	padding-left: 0;
+	padding-right: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+.percard{
+	margin-top: 30px;
+	margin-bottom: 5em;
+}
+
+
+
+
+.slide{
+	margin-top: 120px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	width: 100%;
+	background-color: black;
+	left: 0;
+	margin-top: 30px;
+}
+
+.color{
+	background-color: #000;
+}
+
+.intro{
+	padding-top: 130px;
+	text-align: center;
+	color: white;
+}
+
+.navbar{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+.nav-item{
+	padding: 5px;
+}
+
+
+.hiragana{
+	text-align: center;
+}
+
+.cardContent{
+	margin:auto; 
+	width:auto;
+}
+
+.card {
+    height: 300px;
+    background: url("../images/hiraganaselect1.png") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 18rem;
+}
+
+.card:hover {
+    background: url("../images/hiraganaselect2.png") no-repeat;
+    background-size: cover;
+}
+
+.card1 {
+    height: 300px;
+    background: url("../images/katakanaselect1.png") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 18rem;
+}
+
+.card1:hover {
+    background: url("../images/katakanaselect2.png") no-repeat;
+    background-size: cover;
+}
+
+.card2 {
+    height: 300px;
+    background: url("../images/kanjiselect1.png") no-repeat;
+    display: inline-block;
+    background-size: cover;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 18rem;
+
+}
+
+.card2:hover {
+    background: url("../images/kanjiselect2.png") no-repeat;
+    background-size: cover;
+}
+
+.learn{
+	border-radius: 20px;
+	background: radial-gradient(circle, rgba(255, 0, 0, 0.5), maroon, rgba(0, 0, 0, 1));
+	height: auto;
+
+}
+
+.btn{
+	margin: 20px;
+	background-color: maroon;
+	border-radius: 5px;
+}
+
+#logo{
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+.super{
+	padding-top: 200px;
+	padding-bottom: 100px;
+
+}
+
+
+.box{
+	color: white;
+	text-align: center;
+	line-height: 150px,
+	width: 150px;
+	height: 150px;
+	margin-top: 15px;
+	transition: all 0.6s ease;
+	transform-style: preserve-3d;
+	position: relative;
+
+}
+
+.box:hover{
+	transform: rotateY(180deg);
+	margin-left: 20px;
+}
+
+.front, .back{
+	background: radial-gradient(circle, red, maroon, black);
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	line-height: 150px;
+	border: 5px solid black;
+	border-radius: 10px;
+
+}
+
+.back{
+	transform: rotateY(180deg);
+	font-family: 'Numans', sans-serif;
+	line-height: 20px;
+    padding-top: 50px;
+}
+
+.whole{
+	perspective:700;
+	width: 150px;
+	margin: auto;
+}
+
+
+.row1:hover .hello,
+.row2:hover .hello,
+.row3:hover .hello,
+.row4:hover .hello,
+.row5:hover .hello,
+.row6:hover .hello,
+.row7:hover .hello,
+.row8:hover .hello,
+.row9:hover .hello,
+.row10:hover .hello{
+	background-image: url("../images/Hiraganablank2.png");
+	background-size: cover;
+}
+
+.row1:hover .hi,
+.row2:hover .hi,
+.row3:hover .hi,
+.row4:hover .hi,
+.row5:hover .hi,
+.row6:hover .hi,
+.row7:hover .hi,
+.row8:hover .hi,
+.row9:hover .hi,
+.row10:hover .hi{
+	background-image: url("../images/Katakanablank.png");
+	background-size: cover;
+}
+
+.row1:hover .greet,
+.row2:hover .greet,
+.row3:hover .greet,
+.row4:hover .greet,
+.row5:hover .greet,
+.row6:hover .greet,
+.row7:hover .greet,
+.row8:hover .greet,
+.row9:hover .greet,
+.row10:hover .greet{
+	background-image: url("../images/Kanjiblank2.png");
+	background-size: cover;
+}
+
+.hello{
+	width: 150px;
+	height: 150px;
+	color: white;
+}
+
+.hi{
+	width: 150px;
+	height: 150px;
+	color: white;
+}
+
+.greet{
+	width: 150px;
+	height: 150px;
+	color: white;
+}
+
+.tableTitle{
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	margin-left: 120px;
+	padding: 5px 10px;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	border-radius: 30px;
+
+}
+
+.char{
+	font-size: 100px;
+	color: #000;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+/* submit button */
+input[type=submit] {
+    background-color: maroon;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+/* background color and some padding around the form */
+.comment{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 25%;
+	margin-right: 5%;
+	margin-bottom: 100px;
+}
+
+.contactText{
+	margin-top: 20%;
+	color:red;
+	padding-left: 50px;
+}
+
+
+textarea{
+	height:100px;
+}
+
+.font{
+	font-size: 50px;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+
+/*Small devices*/
+@media only screen and (max-width: 600px){ 
+	#logo{
+		font-size: 30px;
+	}
+
+	.whole{
+		perspective:700;
+		width: 70px;
+		}
+
+	.box{
+		color: white;
+		text-align: center;
+		width: 70px;
+		height: 70px;
+		transition: all 0.6s ease;
+		transform-style: preserve-3d;
+		position: relative;
+		margin-left: 23px;
+
+	}
+
+	.col-2{
+		padding-left: 5px;
+	}
+
+	.front, .back{
+		background: radial-gradient(circle, red, maroon, black);
+		position: absolute;
+		width: 70px;
+		height: 70px;
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		line-height: 20px;
+	}
+
+	.super{
+	padding-top: 100px;
+	padding-bottom: 70px;
+	}
+
+
+	.back{
+	transform: rotateY(180deg);
+	font-family: 'Numans', sans-serif;
+	font-size: 10px;
+	line-height: 0px;
+    padding-top: 15px;
+
+	}
+
+	img{
+		vertical-align: 0;
+	}
+
+	.img-fluid{
+		padding-bottom: 50px;
+		 max-width: 79%;
+    	padding-top: 7px;
+	}
+
+	.hello{
+	width: 50px;
+	height: 50px;
+	color: white;
+	}
+
+	.hi{
+	width: 50px;
+	height: 50px;
+	color: white;
+	}
+
+	.greet{
+	width: 50px;
+	height: 50px;
+	color: white;
+	}
+
+
+	.char{
+	font-size: 50px;
+	color: #000;
+	line-height: 69px;
+	}
+
+
+
+	.row1:hover .hello,
+	.row2:hover .hello,
+	.row3:hover .hello,
+	.row4:hover .hello,
+	.row5:hover .hello,
+	.row6:hover .hello,
+	.row7:hover .hello,
+	.row8:hover .hello,
+	.row9:hover .hello,
+	.row10:hover .hello{
+	background-image: url("../images/Hiraganablank2.png");
+	background-size: cover;
+	}
+
+	.row1:hover .hi,
+	.row2:hover .hi,
+	.row3:hover .hi,
+	.row4:hover .hi,
+	.row5:hover .hi,
+	.row6:hover .hi,
+	.row7:hover .hi,
+	.row8:hover .hi,
+	.row9:hover .hi,
+	.row10:hover .hi{
+	background-image: none;
+	
+	}
+
+	.row1:hover .greet,
+	.row2:hover .greet,
+	.row3:hover .greet,
+	.row4:hover .greet,
+	.row5:hover .greet,
+	.row6:hover .greet,
+	.row7:hover .greet,
+	.row8:hover .greet,
+	.row9:hover .greet,
+	.row10:hover .greet{
+	background-image: url("../images/Kanjiblank2.png");
+	background-size: cover;
+	}
+
+	input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+	}
+
+	input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+	}
+
+
+input[type=submit] {
+    background-color: maroon;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+
+input[type=submit]:hover {
+    background-color: red;
+	}
+
+
+.comment{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 0%;
+    margin-left: 5%;
+     width: 90vw;
+	}
+
+.contactText{
+	margin-top: 20%;
+	color:red;
+	}
+
+
+.font{
+	font-size: 30px;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+#pad{
+	padding-left: 0;
+	padding-right: 0;
+	height: 100%;
+	width: 100%;
+
+}
+
+#row-below {
+	width: 100vw;
+	margin-bottom: 80px;
+}
+
+	.tableTitle{
+	text-align: center;
+	color: #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 5px 5px;
+    letter-spacing: 5px;
+	word-spacing: 10px;
+	border-radius: 0px;
+
+	}
+
+	.container{
+		/*padding-left: 0px;*/
+	}
+
+	h1{
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+
+	.percard{
+		margin-top: 0px;
+		margin-bottom: 1em;
+	}
+
+	.kanji{
+		margin-bottom: 5em;
+	}
+
+}
+
+/*tablets*/
+@media (min-width:601px) and (max-width: 769px){ 
+	#logo{
+		font-size: 30px;
+
+	}
+
+
+	.percard{
+	margin-top: 10px;
+	margin-bottom: 0em;
+	}
+
+	p{
+		font-size: 1.1em;
+	}
+
+	.btn {
+    padding: 36px;
+    border-radius: 30px;
+    font-size: 1.5em;
+	}
+
+	.learn{
+		height: 345px;
+		border: 2px solid black;
+	}
+
+	.cardContent {
+    	margin: auto;
+    	padding: 37px;
+    	width: 100%;
+	}
+
+	.hiragana {
+    margin-top: 15px;
+    margin-bottom: 75px;
+	}
+
+	.card,
+	.card1,
+	.card2{
+		float: left;
+	}
+
+	.whole{
+		perspective:700;
+		width: 98px;
+		}
+
+	.box{
+		color: white;
+		text-align: center;
+		width: 98px;
+		height: 98px;
+		transition: all 0.6s ease;
+		transform-style: preserve-3d;
+		position: relative;
+		margin-left: 23px;
+
+	}
+
+	.front, .back{
+		background: radial-gradient(circle, red, maroon, black);
+		position: absolute;
+		width: 98px;
+		height: 98px;
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		line-height: 50px;
+	}
+
+	.super{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	}
+
+
+	.back{
+	transform: rotateY(180deg);
+	font-family: 'Numans', sans-serif;
+	font-size: 11px;
+	line-height: 5px;
+	padding:18px 5px;
+
+	}
+
+	img{
+		vertical-align: 0;
+	}
+
+	.img-fluid{
+		padding-bottom: 50px;
+	}
+
+	.hello{
+    width: 90px;
+    height: 90px;
+    color: white;
+    margin-left: 37px;
+    margin-top: 14px;
+	}
+
+	.hi{
+    width: 90px;
+    height: 90px;
+    color: white;
+    margin-left: 37px;
+    margin-top: 14px;
+	}
+
+	.greet {
+    width: 90px;
+    height: 90px;
+    color: white;
+    margin-left: 37px;
+    margin-top: 14px;
+	}
+
+
+	.tableTitle{
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	margin-left: 10vh;
+	padding: 5px 5px;
+	border-radius: 30px;
+
+	}
+
+	.char{
+	font-size: 84px;
+	color: #000;
+	line-height: 92px;
+	}
+
+	h1{
+		font-size: 30px;
+		letter-spacing: 1px;
+	}
+
+	.row1:hover .hello,
+	.row2:hover .hello,
+	.row3:hover .hello,
+	.row4:hover .hello,
+	.row5:hover .hello,
+	.row6:hover .hello,
+	.row7:hover .hello,
+	.row8:hover .hello,
+	.row9:hover .hello,
+	.row10:hover .hello{
+	background-image: url("../images/Hiraganablank2.png");
+	background-size: cover;
+	}
+
+	.row1:hover .hi,
+	.row2:hover .hi,
+	.row3:hover .hi,
+	.row4:hover .hi,
+	.row5:hover .hi,
+	.row6:hover .hi,
+	.row7:hover .hi,
+	.row8:hover .hi,
+	.row9:hover .hi,
+	.row10:hover .hi{
+	background-image: url("../images/Katakanablank.png");
+	background-size: cover;
+	
+	}
+
+	.row1:hover .greet,
+	.row2:hover .greet,
+	.row3:hover .greet,
+	.row4:hover .greet,
+	.row5:hover .greet,
+	.row6:hover .greet,
+	.row7:hover .greet,
+	.row8:hover .greet,
+	.row9:hover .greet,
+	.row10:hover .greet{
+	background-image: url("../images/Kanjiblank2.png");
+	background-size: cover;
+	}
+
+
+	.comment {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 48%;
+    margin-right: 0%;
+	}
+
+
+}
+
+/*Large devices*/
+/*@media only screen (min-width: 770px) and (max-width: 992px){*/
+@media only screen (min-width: 1023px) and (max-width: 1366px){
+
+ }

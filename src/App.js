@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import HomePage from './containers/HomePage';
+import Footer from './components/Footer';
+import Hiragana from './containers/Hiragana';
+import Katakana from './containers/Katakana';
+import Kanji from './containers/Kanji';
+import ContactUs from './containers/ContactUs';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Navbar />
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/hiragana' component={Hiragana} />
+        <Route exact path='/katakana' component={Katakana} />
+        <Route exact path='/kanji' component={Kanji} />
+        <Route exact path='/contact' component={ContactUs} />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
