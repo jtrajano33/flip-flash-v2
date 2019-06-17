@@ -34,9 +34,6 @@ h1{
 #pad{
 	padding-left: 0;
 	padding-right: 0;
-	height: 100vh;
-	width: 100vw;
-
 }
 
 .pad1{
@@ -162,6 +159,12 @@ footer{
 	margin: 20px;
 	background-color: maroon;
 	border-radius: 5px;
+}
+
+.btn:hover{
+	transform: scale(1.1);
+	background-color: rgb(168, 16, 16) !important;
+	border-color: maroon;
 }
 
 #logo{
@@ -659,6 +662,7 @@ input[type=submit]:hover {
 		height: 345px;
 		border: 2px solid black;
 	}
+	
 
 	.cardContent {
     	margin: auto;
