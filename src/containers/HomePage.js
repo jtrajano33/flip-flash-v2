@@ -7,7 +7,7 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-md-12 intro">
                         <h1 className="animated flipInY titleFont">Introducing Flip Flash</h1>
-                        <p>Say Goodbye to your boring flash card. Memorizing shouldn't always be on plain background.</p>
+                        <p style={{fontSize: '18px'}}>Say Goodbye to your boring flash card. Memorizing shouldn't always be on plain background.</p>
                     </div>
                 </div>
             </div>
