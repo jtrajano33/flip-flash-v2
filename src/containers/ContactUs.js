@@ -14,23 +14,23 @@ const ContactUs = () => {
                     <div className="comment">
                         <form>
 
-                            <label for="fname">First Name:</label>
+                            <label htmlFor="fname">First Name:</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
-                            <label for="lname">Last Name:</label>
+                            <label htmlFor="lname">Last Name:</label>
                             <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
-                            <label for="email"> Email:</label>
+                            <label htmlFor="email"> Email:</label>
                             <input type="email" id="email" name="email" placeholder="Your Email Address.." />
 
-                            <label for="country">Country</label>
+                            <label htmlFor="country">Country</label>
                             <select id="country" name="country">
                                 <option>Philippines</option>
                                 <option>Canada</option>
                                 <option>USA</option>
                             </select>
 
-                            <label for="subject">Your comment and suggestions</label>
+                            <label htmlFor="subject">Your comment and suggestions</label>
                             <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 
                             <input type="submit" value="Submit" />
