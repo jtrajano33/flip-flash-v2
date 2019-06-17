@@ -91,6 +91,9 @@ footer{
 .nav-item{
 	padding: 5px;
 }
+.nav-item:hover{
+	transform: scale(1.2)
+}
 
 
 .hiragana{
