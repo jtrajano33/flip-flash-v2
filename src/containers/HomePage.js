@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     return (
@@ -21,7 +22,7 @@ const HomePage = () => {
                             <div className="cardContent">
                                 <h1>Learn Hiragana</h1>
                                 <p className="card-text">The first step to learn Japanese</p>
-                                <a href="/hiragana" className="btn btn-dark">Start Learning</a>
+                                <Link to="/hiragana" className="btn btn-dark">Start Learning</Link>
                             </div>
                         </div>
                     </div>
@@ -32,7 +33,7 @@ const HomePage = () => {
                             <div className="cardContent">
                                 <h1>Learn Katakana</h1>
                                 <p className="card-text">Convert foreign words into Japanese now!</p>
-                                <a href="/katakana" className="btn btn-dark">Start Learning</a>
+                                <Link to="/katakana" className="btn btn-dark">Start Learning</Link>
                             </div>
                         </div>
                     </div>
@@ -44,7 +45,7 @@ const HomePage = () => {
                             <div className="cardContent">
                                 <h1>Learn Kanji	</h1>
                                 <p className="card-text">A single letter has its own meaning.</p>
-                                <a href="/kanji" className="btn btn-dark">Start Learning</a>
+                                <Link to="/kanji" className="btn btn-dark">Start Learning</Link>
                             </div>
                         </div>
 
